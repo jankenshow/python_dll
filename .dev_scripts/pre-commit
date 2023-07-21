@@ -1,0 +1,4 @@
+#!/bin/bash
+REPO_ROOT=$(pwd)
+cd $REPO_ROOT/cython_caller && make clean
+cd $REPO_ROOT/vanila_python_caller && make clean
