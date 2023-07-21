@@ -9,7 +9,7 @@ all:
 	$(CC) $(target).o -o $(target) $(LDFLAGS)
 
 run:
-	LD_LIBRARY_PATH=/home/suzuki/.pyenv/versions/3.11.4/lib/:$LD_LIBRARY_PATH ./run_python
+	LD_LIBRARY_PATH=$HOME/.pyenv/versions/3.11.4/lib/:$LD_LIBRARY_PATH ./run_python
 
 clean:
 	rm -f $(target).o $(target)
